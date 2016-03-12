@@ -1,0 +1,67 @@
+[10:30:53] [main/INFO]: Setting user: Player242
+[10:30:54] [Client thread/INFO]: LWJGL Version: 2.9.1
+[10:30:58] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:mymod
+[10:30:59] [Sound Library Loader/INFO]: Sound engine started
+[10:31:00] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[10:31:00] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[10:31:00] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:mymod
+[10:31:00] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[10:31:00] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[10:31:01] [Sound Library Loader/INFO]: Sound engine started
+[10:31:02] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
+[10:31:06] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.menu
+[10:31:07] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
+[10:31:09] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
+[10:31:09] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
+[10:31:09] [Server thread/INFO]: Generating keypair
+[10:31:09] [Server thread/INFO]: Preparing start region for level 0
+[10:31:10] [Server thread/INFO]: Preparing spawn area: 39%
+[10:31:18] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
+[10:31:20] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
+[10:31:26] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
+[10:31:26] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
+[10:31:27] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
+[10:31:27] [Server thread/INFO]: Stopping server
+[10:31:27] [Server thread/INFO]: Saving players
+[10:31:27] [Server thread/INFO]: Saving worlds
+[10:31:27] [Server thread/INFO]: Saving chunks for level 'test item'/Overworld
+[10:31:27] [Server thread/INFO]: Saving chunks for level 'test item'/Nether
+[10:31:27] [Server thread/INFO]: Saving chunks for level 'test item'/The End
+[10:31:28] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
+[10:31:28] [Server thread/INFO]: Generating keypair
+[10:31:28] [Server thread/INFO]: Converting map!
+[10:31:28] [Server thread/INFO]: Scanning folders...
+[10:31:28] [Server thread/INFO]: Total conversion count is 0
+[10:31:28] [Server thread/INFO]: Preparing start region for level 0
+[10:31:29] [Server thread/INFO]: Preparing spawn area: 7%
+[10:31:30] [Server thread/INFO]: Preparing spawn area: 15%
+[10:31:31] [Server thread/INFO]: Preparing spawn area: 23%
+[10:31:32] [Server thread/INFO]: Preparing spawn area: 32%
+[10:31:33] [Server thread/INFO]: Preparing spawn area: 43%
+[10:31:34] [Server thread/INFO]: Preparing spawn area: 55%
+[10:31:35] [Server thread/INFO]: Preparing spawn area: 67%
+[10:31:36] [Server thread/INFO]: Preparing spawn area: 77%
+[10:31:37] [Server thread/INFO]: Preparing spawn area: 90%
+[10:31:38] [Server thread/INFO]: Player242[local:E:0d6450d3] logged in with entity id 471 at (-158.5, 68.0, 263.5)
+[10:31:38] [Server thread/INFO]: Player242 joined the game
+[10:31:41] [Server thread/INFO]: Player242 has just earned the achievement [Taking Inventory]
+[10:31:41] [Client thread/INFO]: [CHAT] Player242 has just earned the achievement [Taking Inventory]
+[10:31:41] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:music.game.creative
+[10:31:44] [Client thread/INFO]: Warning: Clientside chunk ticking took 136 ms
+[10:31:46] [Client thread/INFO]: Warning: Clientside chunk ticking took 101 ms
+[10:31:46] [Client thread/INFO]: Warning: Clientside chunk ticking took 108 ms
+[10:31:46] [Client thread/INFO]: Warning: Clientside chunk ticking took 108 ms
+[10:31:46] [Client thread/INFO]: Warning: Clientside chunk ticking took 117 ms
+[10:31:47] [Server thread/INFO]: Saving and pausing game...
+[10:31:47] [Server thread/INFO]: Saving chunks for level 'test item 2'/Overworld
+[10:31:47] [Server thread/INFO]: Saving chunks for level 'test item 2'/Nether
+[10:31:47] [Server thread/INFO]: Saving chunks for level 'test item 2'/The End
+[10:31:48] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
+[10:31:48] [Server thread/INFO]: Stopping server
+[10:31:48] [Server thread/INFO]: Saving players
+[10:31:48] [Server thread/INFO]: Saving worlds
+[10:31:48] [Server thread/INFO]: Saving chunks for level 'test item 2'/Overworld
+[10:31:48] [Server thread/INFO]: Saving chunks for level 'test item 2'/Nether
+[10:31:48] [Server thread/INFO]: Saving chunks for level 'test item 2'/The End
+[10:31:50] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:gui.button.press
+[10:31:50] [Client thread/INFO]: Stopping!

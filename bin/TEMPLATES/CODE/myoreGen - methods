@@ -1,0 +1,7 @@
+**********************************************************************
+   INITIALIZATION SECTION
+**********************************************************************
+
+   //  LOAD THE ORE GENERATION 
+       mymodWorldGen eventWorldGen = new mymodWorldGen();
+       GameRegistry.registerWorldGenerator(eventWorldGen, 0); 

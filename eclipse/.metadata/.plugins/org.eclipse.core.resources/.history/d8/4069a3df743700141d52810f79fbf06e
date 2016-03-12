@@ -1,0 +1,74 @@
+package com.mymod;
+
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.common.registry.LanguageRegistry;
+
+
+@Mod(modid = mymod.modid, version = mymod.version)
+public class mymod {
+	
+	public static final String modid = "mymod";
+	public static final String version = "1.0";
+	
+	
+	/**
+	 * DECLARATION SECTION 
+	 * *********************************************************** */ 
+
+    //  DECLARE THE ITEM
+        public static Item myitem_1;
+
+	
+	
+
+
+	/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */	
+	
+	@EventHandler
+	public void PreInit(FMLPreInitializationEvent preEvent){
+		
+	/**
+	* INITIALIZATION SECTION 
+	* *********************************************************** */ 
+	
+		//  LOAD THE ITEM
+        myitem_1 = new Item().setUnlocalizedName("myitem_1").setCreativeTab(CreativeTabs.tabMisc);
+        GameRegistry.registerItem(myitem_1, "myitem_1");
+        LanguageRegistry.addName(myitem_1, "brand new item");	
+		
+		
+	}
+	
+	/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+	
+	
+	@EventHandler
+	public void Init(FMLInitializationEvent event){
+		
+	/**
+	* RECIPES SECTION 
+	* *********************************************************** */
+		
+       
+		
+		
+	}
+	
+	/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+	
+	
+	@EventHandler
+	public void PostInit(FMLPostInitializationEvent postEvent){
+		
+	}
+	
+	
+	}

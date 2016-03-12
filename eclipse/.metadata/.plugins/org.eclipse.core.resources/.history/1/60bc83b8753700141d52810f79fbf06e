@@ -1,0 +1,33 @@
+**********************************************************************
+  DECLARATION SECTION
+**********************************************************************
+
+    //  DECLARE THE BLOCK
+        public static Block myblock_1;
+
+    
+**********************************************************************
+  INITIALIZATION SECTION
+**********************************************************************
+
+
+     //  LOAD THE BLOCK 
+         myblock_1 = new myblock_1(Material.rock).setBlockName("myblock_1").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName(MODID + ":" + "myblock_1");
+         GameRegistry.registerBlock(myblock_1, "myblock_1");
+         LanguageRegistry.addName(myblock_1, "my new block");
+
+
+**********************************************************************
+  RECIPES SECTION
+**********************************************************************
+        
+
+    // SMELTING RECIPE
+       GameRegistry.addSmelting(myblock_1, (new ItemStack(myitem_1)), 0.5F);
+       
+    
+    
+
+ 
+     
+         

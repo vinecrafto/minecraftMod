@@ -1,0 +1,100 @@
+package com.mymod;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.common.util.EnumHelper;
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.common.registry.LanguageRegistry;
+
+@Mod(modid = mymod.modid, version = mymod.version)
+public class mymod {
+	
+	public static final String modid = "mymod";
+	public static final String version = "1.0";
+	
+	
+	/**
+	 * DECLARATION SECTION 
+	 * *********************************************************** */ 
+	
+	//  DECLARE THE ITEM
+    public static Item myitem_1;
+    
+    //  DECLARE THE BLOCK
+    public static Block myblock_1;
+    
+    //  DECLARE NEW TOOL MATERIAL
+    																	//name, harvestLevel, maxUses, efficiencyF, damageF, enchantability
+    public static ToolMaterial mytoolmaterial = EnumHelper.addToolMaterial("my new material", 2, 750, 6.0F, 4.0F, 26);
+
+	//DECLARE THE PICKAXE 
+    public static Item mypickaxe_1;
+
+
+
+	/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */	
+	
+	@EventHandler
+	public void PreInit(FMLPreInitializationEvent preEvent){
+		
+	/**
+	* INITIALIZATION SECTION 
+	* *********************************************************** */ 
+	
+		//  LOAD THE ITEM
+        myitem_1 = new Item().setUnlocalizedName("myitem_1").setCreativeTab(CreativeTabs.tabMisc);
+        GameRegistry.registerItem(myitem_1, "myitem_1");
+        LanguageRegistry.addName(myitem_1, "brand new item");
+      
+        //  LOAD THE BLOCK 
+        myblock_1 = new myblock_1(Material.sponge).setHardness(1.5F).setBlockName("myblock_1").setStepSound(Block.soundTypeGravel).setCreativeTab(CreativeTabs.tabBrewing).setResistance(5.0F).setBlockTextureName(modid + ":" + "myblock_1");
+        GameRegistry.registerBlock(myblock_1, "myblock_1");
+        LanguageRegistry.addName(myblock_1, "sponge block");
+		
+    //  LOAD THE PICKAXE
+        mypickaxe_1 = new mypickaxe_1(mymod.mytoolmaterial).setCreativeTab(CreativeTabs.tabCombat).setTextureName(modid + ":" + "mypickaxe_1");
+        GameRegistry.registerItem(mypickaxe_1, "mypickaxe_1");
+        LanguageRegistry.addName(mypickaxe_1, "rock this!");   
+	}
+	
+	/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+	
+	
+	@EventHandler
+	public void Init(FMLInitializationEvent event){
+		
+	/**
+	* RECIPES SECTION 
+	* *********************************************************** */
+		 //  ITEM RECIPE  
+        GameRegistry.addRecipe(new ItemStack(myitem_1, 7), new Object[] { 
+                " C ", " SS", "SS ", 
+                Character.valueOf('C'), Items.cake,
+                Character.valueOf('S'), Items.stick,
+            });
+       
+		
+		
+	}
+	
+	/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+	
+	
+	@EventHandler
+	public void PostInit(FMLPostInitializationEvent postEvent){
+		
+	}
+	
+	
+	}

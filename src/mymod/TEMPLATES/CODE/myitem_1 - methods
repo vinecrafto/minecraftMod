@@ -1,0 +1,29 @@
+**********************************************************************
+  DECLARATION SECTION
+**********************************************************************
+
+    //  DECLARE THE ITEM
+        public static Item myitem_1;
+   
+    
+**********************************************************************
+  INITIALIZATION SECTION
+**********************************************************************
+
+    //  LOAD THE ITEM
+        myitem_1 = new Item().setUnlocalizedName("myitem_1").setCreativeTab(CreativeTabs.tabMisc).setTextureName(modid + ":" + "myitem_1");
+        GameRegistry.registerItem(myitem_1, "myitem_1");
+        LanguageRegistry.addName(myitem_1, "brand new item");
+   
+
+**********************************************************************
+  RECIPES SECTION
+**********************************************************************
+
+    //  ITEM RECIPE  
+        GameRegistry.addRecipe(new ItemStack(myitem_1, 3), new Object[] { 
+                " A ", " SS", "SS ", 
+                Character.valueOf('A'), Items.apple,
+                Character.valueOf('S'), Items.stick
+            });
+       

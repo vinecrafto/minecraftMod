@@ -1,0 +1,65 @@
+package com.mymod;
+
+
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+
+
+@Mod(modid = mymod.modid, version = mymod.version)
+public class mymod {
+	
+	public static final String modid = "mymod";
+	public static final String version = "1.0";
+	
+	
+	/**
+	 * DECLARATION SECTION 
+	 * *********************************************************** */ 
+	
+
+	
+	
+
+
+	/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */	
+	
+	@EventHandler
+	public void PreInit(FMLPreInitializationEvent preEvent){
+		
+	/**
+	* INITIALIZATION SECTION 
+	* *********************************************************** */ 
+	
+		
+		
+		
+	}
+	
+	/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+	
+	
+	@EventHandler
+	public void Init(FMLInitializationEvent event){
+		
+	/**
+	* RECIPES SECTION 
+	* *********************************************************** */
+		
+       
+		
+		
+	}
+	
+	/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+	
+	
+	@EventHandler
+	public void PostInit(FMLPostInitializationEvent postEvent){
+		
+	}
+	
+	
+	}

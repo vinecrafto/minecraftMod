@@ -1,0 +1,29 @@
+**********************************************************************
+  DECLARATION SECTION
+**********************************************************************
+
+    //  DECLARE THE PICKAXE 
+        public static Item mypickaxe_1;
+      
+        
+**********************************************************************
+  INITIALIZATION SECTION
+**********************************************************************
+
+       //  LOAD THE PICKAXE
+         mypickaxe_1 = new mypickaxe_1(ToolMaterial.IRON).setCreativeTab(CreativeTabs.tabCombat).setTextureName(modid + ":" + "mypickaxe_1");
+         GameRegistry.registerItem(mypickaxe_1, "mypickaxe_1");
+         LanguageRegistry.addName(mypickaxe_1, "my new pickaxe");   
+        
+        
+**********************************************************************
+  RECIPES SECTION
+**********************************************************************
+    
+    //  PICKAXE RECIPE  
+        GameRegistry.addRecipe(new ItemStack(mypickaxe_1, 1), new Object[] { 
+                "III", " S ", " S ", 
+                Character.valueOf('I'), Items.iron,
+                Character.valueOf('S'), Items.stick
+            });
+        

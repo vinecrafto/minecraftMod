@@ -1,0 +1,28 @@
+**********************************************************************
+  DECLARATION SECTION
+**********************************************************************
+
+    //  DECLARE THE FOOD
+        public static Item myfood_1;
+    
+    
+**********************************************************************
+  INITIALIZATION SECTION
+**********************************************************************
+
+    //  LOAD THE FOOD
+        myfood_1 = new myfood_1(4, 1.2F, false).setUnlocalizedName("myfood_1").setCreativeTab(CreativeTabs.tabFood);
+        GameRegistry.registerItem(myfood_1, "myfood_1");
+        LanguageRegistry.addName(myfood_1, "my new food");
+    
+
+**********************************************************************
+  RECIPES SECTION
+**********************************************************************
+
+    //  FOOD RECIPE          
+        GameRegistry.addRecipe(new ItemStack(myfood_1, 2), new Object[] { 
+                " A ", " SS", "SS ", 
+                Character.valueOf('A'), Items.apple,
+                Character.valueOf('S'), Items.stick
+            });

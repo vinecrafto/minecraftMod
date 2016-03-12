@@ -1,0 +1,12 @@
+http://www.minecraftforge.net/forum/index.php?topic=14048.0
+http://www.minecraftforge.net/wiki/ForgeGradle/Description
+
+start_client
+net.minecraft.launchwrapper.Launch
+
+--version 1.6 --tweakClass cpw.mods.fml.common.launcher.FMLTweaker --accessToken FML --userProperties {}
+
+-Dfml.ignoreInvalidMinecraftCertificates=true
+
+start_server
+cpw.mods.fml.relauncher.ServerLaunchWrapper

@@ -1,0 +1,34 @@
+**********************************************************************
+  DECLARATION SECTION
+**********************************************************************
+
+    //  DECLARE THE ORE
+        public static Block myore_1;
+
+    
+**********************************************************************
+  INITIALIZATION SECTION
+**********************************************************************
+
+
+     //  LOAD THE ORE 
+         myore_1 = new myore_1(Material.rock).setBlockName("myore_1").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName(modid + ":" + "myore_1");
+         GameRegistry.registerBlock(myore_1, "myore_1");
+         LanguageRegistry.addName(myore_1, "my new ore");
+         
+  
+
+**********************************************************************
+  RECIPES SECTION
+**********************************************************************
+        
+
+    // SMELTING RECIPE
+       GameRegistry.addSmelting(myore_1, (new ItemStack(myitem_1)), 0.5F);
+       
+    
+    
+
+ 
+     
+         

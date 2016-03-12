@@ -1,0 +1,7 @@
+**********************************************************************
+  DECLARATION SECTION
+**********************************************************************
+   
+  //  DECLARE NEW TOOL MATERIAL
+                                                                        //name, harvestLevel, maxUses, efficiencyF, damageF, enchantability
+    public static ToolMaterial mytoolmaterial = EnumHelper.addToolMaterial("my new material", 2, 750, 6.0F, 4.0F, 26);

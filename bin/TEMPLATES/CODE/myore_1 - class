@@ -1,0 +1,27 @@
+package com.mymod;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.item.Item;
+
+    
+    public class myore_1 extends Block {
+    
+    public myore_1(Material material) {
+        super (material);
+    
+    }
+    
+    //public Item getItemDropped (int i, Random random, int j) {
+        //return this == mymod.myore_1 ? mymod.myitem_1 : Item.getItemFromBlock(this);
+    //}
+    
+    @SideOnly(Side.CLIENT)
+    public void registerIcons(IIconRegister iconRegister) {
+        this.blockIcon = iconRegister.registerIcon(mymod.modid + ":" + "myore_1");
+    }
+
+}
