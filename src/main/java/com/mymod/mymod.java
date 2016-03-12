@@ -31,7 +31,7 @@ public class mymod {
 	 * DECLARATION SECTION 
 	 * *********************************************************** */ 
 	public static Item awesomeItem;
-	
+	public static Item yumyum;
 	public static Block awesomeBlock; 
 	public static Block unlit_lampydamp;
 	public static Block lit_lampydamp;
@@ -42,6 +42,7 @@ public class mymod {
 	public static Item swor;
 	public static CreativeTabs Mytab = new Mytab("tab");
 	public static Item opfood;
+	
 
 	/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */	
 	
@@ -64,6 +65,9 @@ public class mymod {
 	
 	opfood = new opfood(20, 1, false, "opfood");
 	GameRegistry.registerItem(opfood, opfood.getUnlocalizedName().substring(5));
+	yumyum = new yumyum("yumyum");
+	GameRegistry.registerItem(yumyum, yumyum.getUnlocalizedName().substring(5));
+	
 
 	
 	//blocks

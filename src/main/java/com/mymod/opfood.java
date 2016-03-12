@@ -8,7 +8,7 @@ public class opfood extends ItemFood {
 		super(hunger, sat, canFeedWolf);
 		setUnlocalizedName(name);
 		setCreativeTab(mymod.Mytab);
-		setTextureName(getUnlocalizedName().substring(5));
+		setTextureName(mymod.modid + ":" + getUnlocalizedName().substring(5));
 		setPotionEffect(11, 1000000, 255, 1);
 
 	}
